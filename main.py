@@ -45,6 +45,7 @@ for object in final_pages:
     auction_location = re.findall(str(re.escape("für das "))+"(.*)"+str(re.escape(" im Bundesland")),temp_title)[0]
     #auction_date =
     #auction_time =
+    #price is not working yet
     price = re.findall(str(re.escape("ermittelter Verkehrswert in EURO: "))+"(.*)"+str(re.escape(" ")),temp_body)[0]
     #table.loc[ID] = [object_type, location, auction_location, auction_date, auction_time, price, object]
 
