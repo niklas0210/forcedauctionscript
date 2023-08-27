@@ -43,28 +43,6 @@ for site_link in relevant_links:
 #print(district_link_list)
 
 
-# @nick das ist dein alter code
-# table = pd.DataFrame(columns=["ID", "type", "location", "auction_location", "auction_date", "auction_time", "price", "link"])
-
-# price_list = []
-
-# for object in final_pages:
-#     object_page = requests.get(object)
-#     temp_soup_ad = BeautifulSoup(object_page.content, "html.parser")
-#     temp_title = temp_soup_ad.find("title").text
-#     temp_body = temp_soup_ad.find(align="justify").text
-#     ID = re.findall(str(re.escape("Aktenzeichen :"))+"(.*)"+str(re.escape(" für")),temp_title)[0]
-#     object_type = re.findall(str(re.escape("Zwangsversteigerung "))+"(.*)"+str(re.escape(": ")),temp_title)[0]
-#     location = re.findall(str(re.escape(": "))+"(.*)"+str(re.escape(" mit dem Aktenzeichen")),temp_title)[0]
-#     auction_location = re.findall(str(re.escape("für das "))+"(.*)"+str(re.escape(" im Bundesland")),temp_title)[0]
-#     #auction_date =
-#     #auction_time =
-#     #TODO fix price getting
-#     price = re.findall(str(re.escape("ermittelter Verkehrswert in EURO: "))+"(.*)"+str(re.escape(" ")),temp_body)[0]
-#     #table.loc[ID] = [object_type, location, auction_location, auction_date, auction_time, price, object]
-
-# print(price_list)
-
 ### GETTING THE CONTENT/DATA ###
 
 data_list = []
